@@ -1,5 +1,5 @@
 # Holberton Headphones
-## Web Page Mock Up create by me based on [this design](https://www.figma.com/file/gkWRcFqkwtruWZgSfnnHF0/Holberton-School---Headphone-company?node-id=0%3A1) by Nicolas Philippot
+## Web Page Mock Up created by me based on [this design](https://www.figma.com/file/gkWRcFqkwtruWZgSfnnHF0/Holberton-School---Headphone-company?node-id=0%3A1) by Nicolas Philippot
 
 ### After the web page is finished it should look like the images below:
 
