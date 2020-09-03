@@ -8,6 +8,18 @@
   box-sizing: border-box;
 }
 
+/* Icon Font Face */
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/holberton_school-icon.eot");
+  src: url("fonts/holberton_school-icon.eot") format("embedded-opentype"),
+    url("fonts/holberton_school-icon.ttf") format("truetype"),
+    url("fonts/holberton_school-icon.woff") format("woff"),
+    url("fonts/holberton_school-icon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Variables */
 :root {
   /* Colors */
@@ -32,9 +44,12 @@
 
 /* GLOBALS */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-color);
-  color: var(--color-white);
   font-family: var(--font-family-base);
 }
 
@@ -68,9 +83,42 @@ a:hover {
   opacity: 0.9;
 }
 
+.section-header {
+  max-width: 637px;
+  min-height: 184px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: var(--font-size-XL);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 40px;
+}
+
+.section-header {
+  font-size: var(--font-size-M);
+  font-weight: var(--font-weight-regular);
+}
+
+.icon_section {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.icon-item {
+  width: 207px;
+  height: 193px;
+  text-align: center;
+  margin: 43px 0;
+}
+
 /* Header Section */
 
 header {
+  color: var(--color-white);
   background-image: url(./images/headphones_hero_1.jpg);
   background-size: cover;
   background-position: center;
@@ -182,36 +230,6 @@ header {
   width: 20px;
 }
 
-@media (min-width: 481px) {
-  /* Header Section */
-  .header_section {
-    max-width: 1132px;
-    padding: 28px 66px 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
-  /* Navbar */
-  .nav-menu {
-    display: flex;
-    float: right;
-    justify-content: space-between;
-    padding: 0;
-    width: 255px;
-  }
-
-  .menu-icon {
-    display: none;
-  }
-
-  .nav-menu li a {
-    font-weight: var(--font-weight-bold);
-  }
-}
-
 /* Hero Section */
 
 .hero_section {
@@ -252,4 +270,117 @@ header {
 
 .hero_section .cta {
   margin-top: 3rem;
+}
+
+/* What We Do (WWD) Section */
+
+.what-we-do {
+  padding: 110px 25px;
+  color: var(--color-black);
+}
+
+.item-icon {
+  font-family: "icomoon";
+  font-weight: var(--font-weight-regular);
+  font-size: 100px;
+  color: var(--color-red);
+}
+
+.sound_wave::before {
+  content: "\e90e";
+}
+
+.movie_clip::before {
+  content: "\e910";
+}
+
+.eighth_note::before {
+  content: "\e90d";
+}
+
+.hearing::before {
+  content: "\e909";
+}
+
+/* Our Results Section */
+.our_results {
+  color: var(--color-white);
+  background-image: url(./images/headphones_hero_2.jpg);
+  background-color: var(--color-black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 650px;
+  padding: 140px 25px 25px;
+}
+
+.result-item {
+  width: 190px;
+  height: 190px;
+  background-image: url(./images/pentagone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-item h4 {
+  font-size: var(--font-size-XXL);
+  font-weight: var(--font-weight-bold);
+  margin: 2rem 0 0;
+}
+
+.result-item p {
+  font-size: var(--font-size-S);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Media Queries */
+
+@media (min-width: 481px) {
+  /* Header Section */
+  .header_section {
+    max-width: 1132px;
+    padding: 28px 66px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  /* Navbar */
+  .nav-menu {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    padding: 0;
+    width: 255px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu li a {
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* WWD Section */
+  .icon_section {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 472px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* WWD Section */
+  .icon_section {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
 }

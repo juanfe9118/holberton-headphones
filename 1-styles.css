@@ -202,7 +202,7 @@ header {
 
 .hero_section {
   max-width: 637px;
-  height: 313px;
+  min-height: 313px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 344px;
@@ -232,7 +232,7 @@ header {
   line-height: 1.5rem;
   font-size: var(--font-size-M);
   text-align: center;
-  margin: 4rem 0 0 0;
+  margin: 4rem 10px 3.5rem;
   padding: 0;
 }
 
@@ -335,7 +335,7 @@ header {
   /* WWD Section */
   .icon_section {
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 472px;
   }
 }
@@ -343,7 +343,7 @@ header {
 @media (min-width: 769px) {
   .icon_section {
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 1000px;
   }
 }
