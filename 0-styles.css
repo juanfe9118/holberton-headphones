@@ -32,6 +32,11 @@
 
 /* GLOBALS */
 
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size-M);
+}
+
 body {
   background-color: var(--background-color);
   color: var(--color-white);
@@ -61,6 +66,7 @@ a:hover {
   padding: 12.5px 15.26px;
   border: 1px solid var(--color-red);
   border-radius: 21px;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
 .cta:hover {

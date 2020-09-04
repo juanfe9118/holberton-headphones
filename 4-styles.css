@@ -46,6 +46,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: var(--font-size-M);
 }
 
 body {
@@ -76,6 +77,7 @@ a:hover {
   padding: 12.5px 15.26px;
   border: 1px solid var(--color-red);
   border-radius: 21px;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
 .cta:hover {
@@ -354,6 +356,7 @@ header {
   font-weight: var(--font-weight-semibold);
   padding: 2px 0;
   margin-bottom: 40px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .contact-form {
@@ -366,18 +369,29 @@ header {
   font-weight: var(--font-weight-semibold);
 }
 
+.form-input {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--color-black);
+  padding-bottom: 3px;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-input input,
+.form-input textarea {
+  flex: 1;
+  margin-left: 10px;
+  border: none;
+  background: transparent;
+  height: 30px;
+}
+
 .contact-form .cta {
   align-self: center;
   justify-self: flex-end;
-  margin-top: 54px;
-}
-
-#email {
-  margin-bottom: 20px;
-}
-
-#email-label {
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 /* Footer */
